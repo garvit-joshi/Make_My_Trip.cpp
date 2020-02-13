@@ -157,7 +157,7 @@ class bookingh
 			cout<<"Name:"<<aname;
 			cout<<"\nCity:"<<city;
 			cout<<"\nDate of Arriving In Hotel:"<<doad<<"/"<<doam<<"/"<<doay;
-			cout<<"\nDate Of Departure In Hotel:"<<dodd<<"/"<<dodm<<"/"<<dody;
+			cout<<"\nExpected Date Of Departure In Hotel:"<<dodd<<"/"<<dodm<<"/"<<dody;
 			cout<<"\nHotel Name:"<<hoteln<<"\n\n";
 			flag=2;
 			}
