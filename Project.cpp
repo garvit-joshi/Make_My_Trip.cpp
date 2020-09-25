@@ -44,9 +44,9 @@ class bookingt
 			cin.ignore();
 			strcpy(aname,name);
 			cout<<"Enter Departure Station:";
-			gets(dods);
+			cin.get(dods, 100);
 			cout<<"Enter Arrival Station:";
-			gets(doas);
+			cin.get(doas, 100);
 			cout<<"Enter Date of Departure:";
 			cout<<"\nDay/Month/Year:";
 			cin>>dodd>>dodm>>dody;
@@ -112,7 +112,7 @@ class bookingh
 			cin.ignore();
 			strcpy(aname,name);
 			cout<<"Enter City:";
-			gets(city);
+			cin.get(city, 100);
 			cout<<"Enter Date of Arriving In Hotel:";
 			cout<<"\nDay/Month/Year:";
 			cin>>doad>>doam>>doay;
@@ -195,7 +195,7 @@ int main()
 		ifstream ifile("TRIPDATA.txt",ios::in|ios::binary);
 		cin.ignore();
 		cout<<"Enter Your User Name:";
-		gets(name);
+		cin.get(name, 100);
 		strcpy(dname,name);	
 		cout<<"Enter Your Password(Case Senstive):";
 		cin>>password;
