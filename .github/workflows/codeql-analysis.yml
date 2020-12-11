@@ -23,7 +23,7 @@ on:
 jobs:
   analyze:
     name: Analyze
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     strategy:
       fail-fast: false
@@ -58,7 +58,7 @@ jobs:
     #    uses a compiled language
 
     - run: |
-       cl Project.cpp
+       g++ Project.cpp
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
